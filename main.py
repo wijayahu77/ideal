@@ -5,8 +5,8 @@ from telegram import Update, Bot
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 import asyncio
 
-TOKEN = os.getenv("7779294054:AAHKbTwTe1qT2AeOaSy-dhQviqmRgx1squE")
-OPENAI_KEY = os.getenv("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")
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 
 openai.api_key = OPENAI_KEY
 bot = Bot(token=TOKEN)
